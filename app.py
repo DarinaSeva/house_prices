@@ -43,11 +43,11 @@ def welcome_page():
     st.header('Наши results')
     st.image('photo_2024-04-26 16.48.08.jpeg', use_column_width=True)
 
-
+import pickle
 
 
 def predict_price():
-    model = joblib.load('ml_pipeline.pkl')
+    model = pickle.load('ml_pipeline.pkl')
     uploaded_file = st.file_uploader("Select CSV-file", type=["csv"])
 
     if uploaded_file is not None:
