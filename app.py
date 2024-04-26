@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import joblib  # Используется для загрузки модели, если модель сохранена с помощью joblib
+# import joblib  # Используется для загрузки модели, если модель сохранена с помощью joblib
 import matplotlib.pyplot as plt
 import seaborn as sns
 
